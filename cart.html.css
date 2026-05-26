@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cart | SneakerVault</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SneakerVault</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+
+<section class="products">
+    <h2>Your Shopping Cart</h2>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="images/jordan1.jpg" alt="Jordan 1">
+
+            <h3>Air Jordan 1 Chicago</h3>
+
+            <p>P2,500</p>
+
+            <button>Remove</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/airforce1.jpg" alt="Air Force 1">
+
+            <h3>Air Force 1 ’07 White</h3>
+
+            <p>P1,800</p>
+
+            <button>Remove</button>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <h2>Total: P4,300</h2>
+
+    <br>
+
+    <button>Checkout</button>
+</section>
+
+<footer>
+    <p>© 2026 SneakerVault. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+

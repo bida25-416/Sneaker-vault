@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SneakerVault</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f0f0f;
+            color: white;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: black;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        /* HERO */
+        .hero {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to right, #111, #222);
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: red;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: darkred;
+        }
+
+        /* PRODUCTS */
+        .products {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background: #1b1b1b;
+            width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .product-card button {
+            margin-bottom: 15px;
+        }
+
+        /* SECTIONS */
+        .about-section,
+        .contact-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: #151515;
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">SneakerVault</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>Premium Sneaker Collection</h1>
+        <p>Shop authentic Jordans, Retros and Air Force sneakers in one place.</p>
+        <button onclick="window.location.href='products.html'">Shop Now</button>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+    <h2>Featured Sneakers</h2>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="images/jordan1.jpg" alt="Air Jordan 1">
+            <h3>Air Jordan 1 Chicago</h3>
+            <p>P2,500</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/jordan4white.jpg" alt="Jordan 4">
+            <h3>Air Jordan 4 Retro White Cement</h3>
+            <p>P3,200</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/jordan4red.jpg" alt="Jordan 4 Red">
+            <h3>Air Jordan 4 Retro Red</h3>
+            <p>P3,400</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/airforce1.jpg" alt="Air Force 1">
+            <h3>Air Force 1 ’07 White</h3>
+            <p>P1,800</p>
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section">
+    <h2>Why Choose SneakerVault?</h2>
+    <p>We sell premium, authentic sneakers with fast delivery and trusted quality.</p>
+    <button onclick="window.location.href='about.html'">Learn More</button>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section">
+    <h2>Need Help?</h2>
+    <p>Contact us for orders, sizing help, and delivery support.</p>
+    <button onclick="window.location.href='contact.html'">Contact Us</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 SneakerVault. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
